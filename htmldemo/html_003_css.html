@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html_003_css.html</title>
+
+    <!-- 스타일 css 연결 : External style (외부 스타일) -->
+    <link rel="stylesheet" href="style/outer.css" type="text/css" />
+
+    <!-- html 파일에서 직접 스타일 설정  : internal style (embeded : 내부스타일)-->
+    <style>
+      /* .one  : 클래스 one은  */
+      .one {
+        background-color: blue;
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">internal style</div>
+    <div id="two">external style</div>
+    <!-- inline style (인라인 스타일) -->
+    <div id="three" style="color: red">inline style</div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html_002_heading.html</title>
+
+    <!-- text를 css로 바꿔줘라 -->
+    <style type="text/css">
+      span {
+        background-color: red;
+        /* 인라인요소는 w/h 적용이 안된다. */
+        width: 500px;
+        height: 200px;
+      }
+      div {
+        background-color: blue;
+        width: 400px;
+        height: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>문서의 제목을 표시할때 사용되는 요소이다.</h2>
+    <h1>Title 1</h1>
+    <h2>Title 2</h2>
+    <h3>Title 3</h3>
+    <h4>Title 4</h4>
+    <h5>Title 5</h5>
+    <h6>Title 6</h6>
+
+    <!-- span과 a 모두 인라인 요소 -->
+    <span style="">span은 인라인의 대표적인 요소이다.</span>
+    <a href="https://www.naver.com">naver</a>
+
+    <!-- 
+        인라인 요소는 요소간의 줄바꿈이 일어나지 않는다.
+        글자(컨텐츠)안에서 꾸며주거나 할때 사용한다.
+        width와 height를 지정해도 실제 표현되지 않는다.
+     -->
+
+    <div class="" style="font-size: 150%">블록의 대표적인 요소이다.</div>
+    <!-- 
+        블록 요소는 요소 앞뒤로 줄바꿈이 일어난다.
+        블록 요소는 widh와 height를 지정할 수 있다.
+     -->
+  </body>
+</html>
