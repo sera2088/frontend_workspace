@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html_css_001_core.html</title>
+    <style>
+      /*
+      selector {속성명 : 속성값; 속성명 : 속성값}
+      https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Selectors
+      */
+
+      p {
+        background-color: yellow;
+        color: red;
+      }
+
+      .test {
+        background-color: cyan;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 
+      core 속성 : 여러 요소에서 공통적으로 사용되는 속성이다.
+                단, html, head, meta, script, style, title 요소에서는 사용 불가능하다.
+     -->
+    <p class="test">item1</p>
+    <p>item2</p>
+    <p>item3</p>
+    <p>item4</p>
+    <div class="test">box</div>
+  </body>
+</html>

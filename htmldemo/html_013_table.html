@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html_013_table.html</title>
+    <style>
+      table {
+        background-color: rgb(247, 213, 219);
+        width: 500px;
+      }
+
+      table,
+      th,
+      td {
+        border-width: 1px;
+        border-style: solid;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        서적 구입 비용
+      </caption>
+      <thead>
+        <tr>
+          <th>서적명</th>
+          <th>출판사</th>
+          <th>가격</th>
+          <th>기타</th>
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">합계</td>
+          <td>8,000원</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>제우스</td>
+          <td>30,000원</td>
+          <td rowspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>JSP</td>
+          <td>가메</td>
+          <td>50,000원</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

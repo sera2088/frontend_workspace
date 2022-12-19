@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html_017_select.html/</title>
+  </head>
+  <body>
+    <!-- 
+        <select>요소 : 셀렉트박스(드롭다운)를 표시한다.
+        <option>요소 : 셀렉트박스에 포함된 항목을 정의하기 위해 사용한다.
+            selected 속성 : 여러개의 항목 중에서 선택된 항목을 표시한다.
+            value 속성 : 각 항목의 값을 지정하기 위해 사용한다.
+                        서버로 데이터를 보낼 때 value 속성의 값이 넘어간다.
+     -->
+
+    <form action="#">
+      <select name="subject">
+        <option value="java">JAVA</option>
+        <option value="jsp">JSP</option>
+        <option value="html5" selected="selected">HTML5</option>
+        <option value="jquery">jQuery</option>
+      </select>
+      <input type="submit" value="commit" />
+    </form>
+
+    <form action="#">
+      <select name="subgroup">
+        <optgroup label="backend">
+          <option value="java">JAVA</option>
+          <option value="jsp">JSP</option>
+          <option value="servlet">SERVLET</option>
+        </optgroup>
+
+        <optgroup label="frontend">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JAVASCRIPT</option>
+        </optgroup>
+
+        <optgroup label="database">
+          <option value="oracle">ORACLE</option>
+          <option value="mysql">MYSQL</option>
+          <option value="mssql">MSSQL</option>
+        </optgroup>
+      </select>
+
+      <input type="submit" value="commit" />
+    </form>
+  </body>
+</html>

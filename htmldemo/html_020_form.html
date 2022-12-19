@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html_020_form.html</title>
+    <style>
+      div {
+        width: 600px;
+        margin-top: 10px;
+      }
+
+      table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+
+      td {
+        font-weight: bold;
+      }
+
+      table {
+        width: 600px;
+      }
+
+      caption {
+        text-align: left;
+        font-weight: bolder;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <caption>
+      <b>기본정보 입력</b>
+    </caption>
+    <form action="#">
+      <table>
+        <tr>
+          <th>이름</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>아이디</th>
+          <td>
+            <input type="text" />
+            <input type="button" value="중복체크" />
+          </td>
+        </tr>
+        <tr>
+          <th>비밀번호</th>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <th>이메일</th>
+          <td>
+            <input type="text" />
+            <span>@</span>
+            <select>
+              <option value="">선택하세요</option>
+            </select>
+            <input type="text" name="" id="" />
+          </td>
+        </tr>
+        <tr>
+          <th>연락처</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>메일수신여부</th>
+          <td>
+            <input type="radio" name="mail" value="" /> 받음
+            <input type="radio" name="mail" value="" /> 받지않음
+          </td>
+        </tr>
+        <tr>
+          <th>관심분야</th>
+          <td>
+            <input type="checkbox" name="subject" value="java" /> 자바
+            <input type="checkbox" name="subject" value="c++" /> c++
+            <input type="checkbox" name="subject" value="python" /> 파이썬
+            <input type="checkbox" name="subject" value="android" /> 안드로이드
+          </td>
+        </tr>
+      </table>
+      <div>
+        <input type="reset" value="취소" />
+        <input type="submit" value="저장" />
+      </div>
+    </form>
+  </body>
+</html>
+
+<!-- 
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html_020_form.html</title>
+    <style>
+      div {
+        width: 600px;
+        margin-top: 10px;
+      }
+
+      table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+
+      td {
+        font-weight: bold;
+      }
+
+      table {
+        width: 600px;
+      }
+
+      caption {
+        text-align: left;
+        font-weight: bolder;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        기본정보 입력
+      </caption>
+      <tbody>
+        <tr>
+          <th>이름</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>아이디</th>
+          <td><input type="text" /> <button>중복체크</button></td>
+        </tr>
+        <tr>
+          <th>비밀번호</th>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <th>비밀번호확인</th>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <th>이메일</th>
+          <td>
+            <input type="text" /><span>@</span>
+            <select>
+              <option value="">선택하세요</option>
+            </select>
+            <input type="text" />
+          </td>
+        </tr>
+        <tr>
+          <th>연락처</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>메일수신여부</th>
+          <td>
+            <input type="radio" name="mail" />받음
+            <input type="radio" name="mail" />받지않음
+          </td>
+        </tr>
+        <tr>
+          <th>관심분야</th>
+          <td>
+            <input type="checkbox" name="group" />자바
+            <input type="checkbox" name="group" />C++
+            <input type="checkbox" name="group" />파이썬
+            <input type="checkbox" name="group" />안드로이드
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <input type="reset" value="취소" />
+      <input type="submit" value="저장" />
+    </div>
+  </body>
+</html>
+ -->
