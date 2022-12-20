@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_004_selector.html</title>
+    <style>
+      /* p와 .unit 사이의 공백 : p의 자식의 unit 클래스 */
+      p .unit {
+        background-color: red;
+      }
+
+      /* p와 .unit을 붙여 씀 : p요소의 unit 크래스 */
+      p.unit {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- p>span.unit -->
+    <p>
+      <span class="unit">p요소의 자손요소인 span요소에 설정된 class속성</span>
+    </p>
+    <!-- p.unit -->
+    <p class="unit">p요소에 설정된 class 속성</p>
+  </body>
+</html>

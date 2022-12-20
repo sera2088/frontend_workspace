@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dv1 {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border-width: 10px;
+        border-style: solid;
+        border-color: black;
+      }
+
+      .dv2 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        border-bottom-width: 20px;
+        border-bottom-style: dotted;
+        border-bottom-color: aqua;
+      }
+
+      .dv3 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+
+        /* 시계방향으로 설정 : top right bottom left*/
+        border-width: 5px 10px 15px 20px;
+
+        /* top right/left  bottom  탑 좌우 바텀*/
+        border-style: solid dotted dashed;
+
+        /* top/bottom  right/left  탑바텀 좌우*/
+        border-color: black brown;
+      }
+
+      /* border: border-width border-style border-color|initial|inherit; 
+      
+      If border-color is omitted, the color applied will be the color of the text.
+*/
+      .dv4 {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        /* border의 단축속성 */
+        border: 3px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="dv1"></div>
+      <div class="dv2"></div>
+      <div class="dv3"></div>
+      <div class="dv4"></div>
+    </div>
+  </body>
+</html>

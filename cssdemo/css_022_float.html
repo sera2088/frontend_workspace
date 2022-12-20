@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_022_float.html</title>
+    <style>
+      .wrap {
+        width: 900px;
+        height: 500px;
+        background-color: yellow;
+      }
+
+      #header {
+        width: 900px;
+        height: 100px;
+        background-color: aqua;
+      }
+
+      #nav {
+        width: 300px;
+        height: 300px;
+        float: left;
+        background-color: tomato;
+      }
+
+      #section {
+        width: 600px;
+        height: 300px;
+        float: right;
+        background-color: blueviolet;
+      }
+
+      #footer {
+        width: 900px;
+        height: 100px;
+        background-color: darkcyan;
+
+        /* float 영향에서 벗어나게 함 */
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1" id="header"></div>
+      <div class="box2" id="nav"></div>
+      <div class="box3" id="section"></div>
+      <div class="box4" id="footer"></div>
+    </div>
+  </body>
+</html>

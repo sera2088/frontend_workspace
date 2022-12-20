@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_021_float.html</title>
+    <style>
+      /* 
+        float
+        1. float는 박스의 위치를 부모요소의 안에서 왼쪽 또는 오른쪽으로 이동시키는 기능이다.
+        2. float가 지정된 박스는 문서의 일반적인 흐름에 영향받지 않으면서 이동된 위치에 떠있다.
+        */
+
+      .wrap {
+        background-color: gray;
+      }
+
+      div.wrap div {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box1 {
+        background-color: red;
+        float: left;
+      }
+
+      .box2 {
+        float: left;
+        background-color: green;
+      }
+
+      .box3 {
+        float: left;
+        background-color: blue;
+      }
+
+      div.wrap p {
+        clear: both; /*float 해제*/
+      }
+
+      img {
+        float: right;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <p>inline</p>
+    </div>
+
+    <div class="other" style="background-color: yellow; height: 500px">
+      <img src="images/gosu.jpg" alt="고수 영화배우" />
+      <p>
+        기아의 준중형 SUV 스포티지 하이브리드가 유럽의 유력 자동차 전문지
+        비교평가에서 도요타의 RAV4 하이브리드를 압도하며 경쟁력을
+        인정받았습니다. 독일 자동차 전문 매체 아우토 빌트(Auto Bild)가 최근
+        실시한 하이브리드 SUV 비교 평가에서 기아 스포티지가 도요타 RAV4보다 ‘한
+        세대 앞선 차’라고 평하며 높은 점수를 부여했습니다. 이번 호평은 그간
+        글로벌 하이브리드카 시장을 주름잡던 도요타의 대표 모델인 RAV4
+        하이브리드를 큰 점수 차로 앞섰다는 점에서 의미가 있습니다. 아우토 빌트는
+        아우토 모토 운트 슈포트(Auto Motor und Sport), 아우토 자이퉁(Auto
+        Zeitung)과 함께 신뢰성 높은 독일 3대 자동차 매거진 중 하나로, 독일은
+        물론, 유럽 전역의 소비자들에게 큰 영향력을 미치는 매체입니다.
+      </p>
+    </div>
+  </body>
+</html>

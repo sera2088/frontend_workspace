@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_019_list.html</title>
+    <style>
+      ul {
+        background-color: yellow;
+        height: 100px;
+        width: 100px;
+      }
+
+      ul,
+      li {
+        border: 1px solid;
+      }
+
+      li {
+        list-style-type: disc;
+        /* 기호의 위치를 지정 : inside, outside (default) */
+        /* list-style-position: inside; */
+        /* list-style-image: url("images/icon.png"); */
+        list-style: square inside url(images/icon.png);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>메뉴1</li>
+      <li>메뉴2</li>
+      <li>메뉴3</li>
+    </ul>
+  </body>
+</html>

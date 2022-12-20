@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_009_pseudo.html</title>
+    <style>
+      /* nth-child(n) 와 nth-of-type(n) */
+
+      /* 모든 자식요소에서 p 요소가 2번째 일때 적용 */
+      p:nth-child(2) {
+        background-color: red;
+      }
+
+      /* 자식 요소들 중에 p요소만으로 2번째 일때 적용 */
+      p:nth-of-type(2) {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>computer</p>
+      <span>test</span>
+      <p>moniter</p>
+      <p>telecision</p>
+      <p>desk</p>
+      <p>top</p>
+    </div>
+  </body>
+</html>

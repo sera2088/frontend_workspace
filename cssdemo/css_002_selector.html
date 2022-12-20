@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_002_selector.html</title>
+    <style>
+      /* 선태자 우선순위 */
+
+      /* 0001 */
+      p {
+        color: red;
+        font-size: 30px;
+      }
+
+      /* 0010 */
+      .order {
+        color: green;
+      }
+
+      /* 0100 */
+      #unit {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <p>test1</p>
+    <!-- 1000 -->
+    <p class="order" id="unit" style="color: purple">test2</p>
+    <p>test3</p>
+    <p class="order">test4</p>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_003_selector.html</title>
+    <style>
+      /* body h1 이 h1보다 우선순위가 높다. */
+      /* 0001 + 0001 = 0002 */
+      body h1 {
+        color: red;
+      }
+
+      /* 0001 */
+      h1 {
+        color: blue;
+      }
+
+      /* 각각 0001 */
+      h1,
+      h2 {
+        color: blueviolet;
+      }
+
+      /* h1 중에 클래스가 wrap인것 */
+      /* 0001 + 0010 = 0011 */
+      h1.wrap {
+        color: green;
+      }
+
+      /* 0100 */
+      #data {
+        color: aqua;
+      }
+
+      /* 0100 + 0010 = 0110 */
+      #data.cnt {
+        color: brown;
+      }
+
+      /* !important 는 우선순위 계산이 무시되고 무조건 적용된다. */
+      p {
+        color: purple !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="wrap">title1</h1>
+    <div>
+      <div>
+        <h1>test2</h1>
+      </div>
+    </div>
+
+    <p class="cnt" id="data">
+      우선순위는 요소들에 적용할 스타일이 중복될 때 적용되는 스타일을 계산하는
+      방법이다.
+    </p>
+    <p class="cnt">
+      요소들에 스타일을 적용하기 위해서는 선택자를 지정해서 설명할 수 있다.
+    </p>
+  </body>
+</html>

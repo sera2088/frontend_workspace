@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_010_pseudo.html</title>
+    <style>
+      /* nth-child(n)와 nth-of-type(n) */
+
+      /* 짝수만 */
+      p:nth-of-type(even) {
+        background-color: aqua;
+      }
+
+      /* 3의 배수만 */
+      p:nth-of-type(3n) {
+        background-color: rgb(89, 63, 235);
+      }
+
+      /* 홀수만 */
+      p:nth-of-type(odd) {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>computer</p>
+      <span>test</span>
+      <p>moniter</p>
+      <p>telecision</p>
+      <p>desk</p>
+      <p>top</p>
+      <p>sera</p>
+    </div>
+  </body>
+</html>

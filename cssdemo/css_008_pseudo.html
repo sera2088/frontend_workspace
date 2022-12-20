@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_008_pseudo.html</title>
+    <style>
+      /* p의 마지막 자식 */
+      p:last-child {
+        color: brown;
+      }
+
+      p:first-child {
+        /* p는 두번째부터 사용 되었기 때문에 적용 안됨. */
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>div의 span 요소</span>
+      <p>div의 두번째 자식</p>
+      <p>div의 세번째 자식</p>
+    </div>
+  </body>
+</html>

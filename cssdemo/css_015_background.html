@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_015_background.html</title>
+    <style>
+      * {
+        border: 0;
+        margin: 0;
+        padding: 0;
+      }
+
+      .dv1 {
+        background-color: yellow; /* #FFE400 */
+        width: 100px;
+        height: 100px;
+      }
+
+      .dv2 {
+        width: 500px;
+        height: 500px;
+        background-color: gray;
+        background-image: url(images/gosu.jpg);
+        background-repeat: no-repeat; /*  반복하지 않겠다. */
+        /* background-repeat: repeat-y; y방향으로 반복하겠다. */
+        background-position: right center; /* 수평 수직 */
+        /* left center right  ,  top center bottom */
+      }
+
+      .dv3 {
+        width: 200px;
+        height: 150px;
+        background-image: url(images/gosu.jpg);
+        background-repeat: no-repeat;
+        border: 20px solid rgba(255, 0, 0, 0.2);
+        padding: 20px;
+      }
+
+      .dv4 {
+        /*  단축속성  */
+        /* bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+        background: red;
+        width: 300px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dv1">&nbsp;</div>
+    <div class="dv2">&nbsp;</div>
+    <div class="dv3">&nbsp;</div>
+    <div class="dv4">&nbsp;</div>
+  </body>
+</html>

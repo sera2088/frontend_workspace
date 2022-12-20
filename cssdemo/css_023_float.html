@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_023_float.html</title>
+
+    <style>
+      .wrap {
+        width: 1000px;
+        height: 700px;
+        background-color: yellow;
+      }
+
+      #header {
+        width: 1000px;
+        height: 150px;
+        background-color: blue;
+      }
+
+      #section {
+        width: 700px;
+        height: 550px;
+        float: left;
+        border: 1px solid;
+        background-color: olive;
+      }
+
+      .sectionbox1 {
+        height: 200px;
+      }
+
+      .sectionbox2 {
+        height: 350px;
+        border-top: 1px solid;
+      }
+
+      #nav {
+        width: 250px;
+        height: 550px;
+        float: right;
+        border: 1px solid;
+        background-color: green;
+      }
+
+      .navbox1 {
+        height: 150px;
+      }
+      .navbox2 {
+        height: 200px;
+        border-top: 1px solid;
+      }
+      .navbox3 {
+        height: 200px;
+        border-top: 1px solid;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div id="header"></div>
+
+      <div id="section">
+        <section class="sectionbox1"></section>
+        <section class="sectionbox2"></section>
+      </div>
+      <div id="nav">
+        <div class="navbox1"></div>
+        <div class="navbox2"></div>
+        <div class="navbox3"></div>
+      </div>
+    </div>
+  </body>
+</html>

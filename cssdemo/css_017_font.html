@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_017_font.html</title>
+    <style>
+      p {
+        /* 왼쪽부터 체크하면서 없으면 오른쪽 폰트로 표시된다. */
+        font-family: serif, "굴림", "Times New Roman";
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 20px;
+        font-variant: small-caps;
+      }
+
+      span {
+        /* font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit; 
+
+        The font-size and font-family values are required 
+        If one of the other values is missing, their default value are used.*/
+        font: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>웹 문서의 폰트를 지정할 때 사용한다. web document</p>
+    <span>폰트에 스타일 지정</span>
+  </body>
+</html>
