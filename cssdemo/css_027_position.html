@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_027_position.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+      }
+
+      .box1 {
+        width: 500px;
+        height: 100px;
+        background-color: black;
+      }
+
+      .box2 {
+        width: 500px;
+        height: 200px;
+        background-color: papayawhip;
+        position: relative;
+      }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: darkseagreen;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+      }
+
+      .box4 {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        position: relative;
+        left: 200px;
+        top: 0px;
+      }
+
+      .box5 {
+        width: 100px;
+        height: 00px;
+        background-color: deepskyblue;
+        position: fixed;
+        right: 10px;
+        top: 50px;
+      }
+
+      .box6 {
+        width: 800px;
+        height: 100px;
+        background-color: darkcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        포지션 (position 속성)
+        1. position은 박스에 대한 배치를 변경할 때 사용한다.
+        2. position의 값으로 static, absolute, relatice, fixed 등이 있다.
+        3. static : 순서에 의한 기본위치를 지정한다.
+           absolute : 부모 요소를 기준으로 위치를 변경한다. (원래의 위치값을 잃는다.)
+           relative : 자기 자신을 기준으로 위치를 변경한다. (원래의 위치값을 가지고 있다.)
+           fixed : 스크린을 기준으로 위치를 지정한다. (원래의 위치값을 잃는다.)
+        4. absolute의 위치 지정
+            부모요소의 position이 static이면 기준점이 body가 된다.
+            부모요소의 position이 absolute, fixed, relative이면 기준점이 부모요소이다.
+     -->
+    <div class="box1"></div>
+    <div class="box2">
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <p>요소들의 위치 변경</p>
+    </div>
+
+    <div class="box5"></div>
+    <div class="box6">
+      21일 정치권에 따르면 감사원은 이번 감사 대상 기관인 통계청, 국토교통부,
+      한국부동산원의 통계 담당 직원 PC에 전자감식(디지털 포렌식)을 진행해
+      이메일, 메신저 기록 등을 복원했다. 감사원은 이들 기관이 주요 통계를 집계해
+      발표하는 과정에서 청와대 사전보고 및 수정요구가 있었는지 들여다보고 있다.
+      특히 국토부 산하기관인 한국부동산원(옛 한국감정원)의 부동산값 동향조사에서
+      표본을 의도적으로 치우치게 추출하거나 조사원이 조사 숫자를 임의 입력하는
+      등 고의적 왜곡이 일어난 정황을 파악한 것으로 알려졌다.
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

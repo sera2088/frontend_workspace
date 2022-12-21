@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_025_imageMenu.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+      }
+
+      /* body {
+        margin-left: 10px;
+      } */
+
+      body div.wrap {
+        width: 1210px;
+        height: 104px;
+        margin: 10px auto; /* top/bottom  right/left */
+        /* background-color: yellow; */
+      }
+
+      h1 {
+        width: 0;
+        height: 0;
+        /* font-size: 0; */
+        visibility: hidden;
+        text-indent: -2000px;
+      }
+
+      ul.mainMenu {
+        width: 1208px;
+        height: 104px;
+        list-style-type: none;
+        border-left: 2px solid;
+      }
+
+      ul.mainMenu li {
+        border: 2px solid;
+        float: left;
+        border-left-width: 0;
+      }
+
+      ul.mainMenu li a {
+        width: 300px;
+        height: 100px;
+        display: block;
+        font-size: 0px;
+        text-indent: -2000px;
+      }
+
+      ul.mainMenu li.mail a {
+        background-image: url(images/mail.gif);
+        background-repeat: no-repeat;
+      }
+      ul.mainMenu li.cafe a {
+        background-image: url(images/cafe.gif);
+        background-repeat: no-repeat;
+      }
+      ul.mainMenu li.blog a {
+        background-image: url(images/blog.gif);
+        background-repeat: no-repeat;
+      }
+      ul.mainMenu li.kin a {
+        background-image: url(images/kin.gif);
+        background-repeat: no-repeat;
+      }
+
+      /* background-position: -300px 0px; */
+      ul.mainMenu li.mail a:hover {
+        background-position: right bottom;
+      }
+      ul.mainMenu li.cafe a:hover {
+        background-position: right bottom;
+      }
+      ul.mainMenu li.blog a:hover {
+        background-position: right bottom;
+      }
+      ul.mainMenu li.kin a:hover {
+        background-position: right bottom;
+      }
+
+      /* ul.mainMenu li a:hover {
+        background-position: right bottom;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>메뉴</h1>
+        <nav>
+          <ul class="mainMenu">
+            <li class="mail"><a href="#">메뉴</a></li>
+            <li class="cafe"><a href="#">카페</a></li>
+            <li class="blog"><a href="#">블로그</a></li>
+            <li class="kin"><a href="#">지식in</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>

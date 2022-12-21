@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_032_white_space.html</title>
+    <style>
+      /*
+          
+                  스페이스와 탭                 줄바꿈                자동 줄바꿈
+         normal        병합                     병합                    O
+         nowrap        병합                     병합                    X
+         pre           보존                     보존                    X
+         pre-wrap      보존                     보존                    O
+         pre-line      병합                     보존                    O
+         
+      */
+      .a {
+        white-space: nowrap;
+      }
+
+      .b {
+        white-space: normal;
+      }
+
+      .c {
+        white-space: pre;
+      }
+
+      .d {
+        white-space: pre-wrap;
+      }
+
+      .e {
+        white-space: pre-line;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>white-space: nowrap:</h2>
+    <p class="a">
+      This is some text. This is some text. This is some text. This is some
+      text. This is some text. This is some text. This is some text. This is
+      some text. This is some text. This is some text. This is some text. This
+      is some text.
+    </p>
+
+    <h2>white-space: normal:</h2>
+    <p class="b">
+      This is some text. This is some text. This is some text. This is some
+      text. This is some text. This is some text. This is some text. This is
+      some text. This is some text. This is some text. This is some text. This
+      is some text.
+    </p>
+
+    <h2>white-space: pre:</h2>
+    <p class="c">
+      This is some text. This is some text. This is some text. This is some
+      text. This is some text. This is some text. This is some text. This is
+      some text. This is some text. This is some text. This is some text. This
+      is some text.
+    </p>
+
+    <h2>white-space: pre-wrap:</h2>
+    <p class="d">
+      This is some text. This is some text. This is some text. This is some
+      text. This is some text. This is some text. This is some text. This is
+      some text. This is some text. This is some text. This is some text. This
+      is some text.
+    </p>
+
+    <h2>white-space: pre-line:</h2>
+    <p class="e">
+      This is some text. This is some text. This is some text. This is some
+      text. This is some text. This is some text. This is some text. This is
+      some text. This is some text. This is some text. This is some text. This
+      is some text.
+    </p>
+  </body>
+</html>

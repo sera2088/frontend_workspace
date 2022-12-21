@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_026_imageHorizentalMenu.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+      }
+      div.wrap {
+        width: 816px;
+        height: 38px;
+        margin: 10px auto;
+        /* background-color: yellow; */
+      }
+
+      ul#gnb {
+        height: 38px;
+        list-style-type: none;
+      }
+
+      ul#gnb li {
+        float: left;
+      }
+
+      ul#gnb li a {
+        width: 136px;
+        height: 38px;
+        display: block;
+        background-image: url("images/globalnavbg.gif");
+        background-repeat: no-repeat;
+        font-size: 0px;
+        text-indent: -2000px;
+      }
+
+      ul#gnb li.apple a {
+        background-position: 0px 0px;
+      }
+
+      ul#gnb li.store a {
+        background-position: -136px 0px;
+      }
+
+      ul#gnb li.mac a {
+        background-position: -272px 0px;
+      }
+
+      ul#gnb li.ipad a {
+        background-position: -408px 0px;
+      }
+      ul#gnb li.download a {
+        background-position: -544px 0px;
+      }
+      ul#gnb li.support a {
+        background-position: -680px 0px;
+        border-radius: 0 5px 8px 0;
+      }
+
+      /* :hover */
+      ul#gnb li.apple a:hover {
+        background-position: 0px -76px;
+      }
+
+      ul#gnb li.store a:hover {
+        background-position: -136px -76px;
+      }
+
+      ul#gnb li.mac a:hover {
+        background-position: -272px -76px;
+      }
+
+      ul#gnb li.ipad a:hover {
+        background-position: -408px -76px;
+      }
+      ul#gnb li.download a:hover {
+        background-position: -544px -76px;
+      }
+      ul#gnb li.support a:hover {
+        background-position: -680px -76px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <ul id="gnb">
+          <li class="apple"><a href="#">Apple</a></li>
+          <li class="store"><a href="#">Store</a></li>
+          <li class="mac"><a href="#">mac</a></li>
+          <li class="ipad"><a href="#">ipad</a></li>
+          <li class="download"><a href="#">Download</a></li>
+          <li class="support"><a href="#">support</a></li>
+        </ul>
+      </header>
+    </div>
+  </body>
+</html>
