@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_003_variable.html</title>
+  </head>
+  <body>
+    <script>
+      //변수(variable) : 변하는 데이터(값)을 저장할 수 있는 메모리 공간
+
+      // var, let, const
+
+      let data = 3; //변수 선언
+      console.log(data);
+      // 문자 그대로 출력하려면 `(백픽) 사용
+      console.log(`a=%d`, data);
+
+      let a = "jacascript";
+      console.log(`a=%s`, a);
+
+      let c = 4.58;
+      console.log(`c=%f`, c);
+
+      //Chrome은 숫자 서식을 지원하지않습니다.
+      console.log(`c=%.1f`, c);
+
+      //출력기호 : %d(정수), %f(실수), %s(문자열)
+
+      // Template literals
+      //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+      let b = true; //true, false(소문자)
+      console.log(`b=` + b);
+      console.log(`b=${b}`);
+      console.log(`b=%s`, b);
+
+      let d = null;
+      console.log(`d=${d}`);
+
+      //Uncaught ReferenceError: e is not defined
+      console.log(`e=${e}`);
+    </script>
+  </body>
+</html>

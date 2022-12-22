@@ -18,7 +18,7 @@
 
       div#main_aside {
         width: 200px;
-        background-color: yellow;
+        /* background-color: yellow; */
         float: right;
       }
 
@@ -56,6 +56,28 @@
         line-height: 30px;
         color: white;
         background-color: black;
+      }
+
+      input:nth-of-type(1):checked ~ div.buttons > label:nth-of-type(1) {
+        background-color: yellow;
+        color: black;
+      }
+
+      input:nth-of-type(1):checked ~ div:nth-of-type(3) {
+        display: none;
+      }
+
+      input:nth-of-type(2):checked ~ div.buttons > label:nth-of-type(2) {
+        background-color: yellow;
+        color: black;
+      }
+
+      input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+        display: none;
+      }
+
+      div#main_aside > input {
+        display: none;
       }
     </style>
   </head>

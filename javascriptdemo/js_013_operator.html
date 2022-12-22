@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_013_operator.html</title>
+    <script>
+      /*
+       비교연산자 :  >, <, >=, <=, ==,  !=,  ===, !==
+
+       == : 메모리에 저장된 값만 비교
+       === : 메모리에 저장된 값과 데이터 타입 비교
+      */
+
+      let numX = 5;
+      let numY = 5;
+      console.log(`numX==numY:${numX == numY}`); //numX==numY:true
+      console.log(`numX===numY:${numX === numY}`); //numX===numY:true
+
+      let objX = new Number(numX);
+      let objY = new Number(numY);
+      console.log(`objX==objY:${objX == objY}`); //objX==objY:false
+      console.log(`objX===objY:${objX === objY}`); //objX===objY:false
+
+      let dataX = 3;
+      let dataY = '3';
+      console.log(`dataX==dataY:${dataX == dataY}`); //dataX==dataY:true
+      console.log(`dataX===dataY:${dataX === dataY}`); //dataX===dataY:false
+    </script>
+  </body>
+</html>

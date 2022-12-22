@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_012_operator.html</title>
+  </head>
+  <body>
+    <script>
+      /*
+      논리연산자: && (AND), || (OR),  !(NOT)
+      */
+
+      let left = true;
+      let right = false;
+
+      console.log(left && right); //false
+      console.log(!left); //false
+      console.log(!right); //true
+
+      let a = 3;
+      let b = 5;
+      let c = 9;
+      // &&은 좌변이 false이면 우변을 수행 안한다.
+      let count = b < a && ++c > 4;
+      console.log(`count=${count}, c=${c}`); //count=false, c=9
+
+      // ||은 좌변이 true이면 우변을 수행 안한다.
+      count = b > a || ++c > 4;
+      console.log(`count=${count}, c=${c}`); //count=true, c=9
+
+      let check = b > a && '통과';
+      console.log(check);
+
+      check = a > b || '실패';
+      console.log(check); //실패
+
+      check = b > a && null;
+      console.log(check); //null
+
+      check = b > a && undefined;
+      console.log(check); // undefined
+
+      check = b > a && 0;
+      console.log(check); //0
+
+      check = a > b && 'ok';
+      console.log(check); //'ok'
+
+      check = 0 && 'ok';
+      console.log(check); //0
+
+      check = undefined && 'ok'; //undefined
+      console.log(check);
+
+      check = undefined || 'ok'; //ok
+      console.log(check);
+    </script>
+  </body>
+</html>

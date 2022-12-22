@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_006_var_let.html</title>
+  </head>
+  <body>
+    <script>
+      var name = "홍길동";
+      console.log(`name=${name}`);
+
+      //var는 변수 이중선언이 가능하다.
+      var name = "고수";
+      console.log(`name=${name}`);
+
+      let data = "red";
+      console.log(`data=${data}`);
+
+      //let은 변수 이중선언이 불가능하다.
+      //Uncaught SyntaxError: Identifier 'data' has aleady
+      //let data = "blue";
+    </script>
+  </body>
+</html>

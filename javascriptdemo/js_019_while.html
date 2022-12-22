@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js019_while.js</title>
+  </head>
+  <body>
+    <script>
+      /*
+  while(조건식){
+     실행문;
+  }
+*/
+
+      for (let i = 1; i <= 5; i++) {
+        console.log(i);
+      }
+
+      console.log('==================');
+      let j = 1;
+      while (j <= 5) {
+        console.log(j);
+        j++;
+      }
+
+      /*
+while문은 조건식을 생략할 수 없다.
+while(true){
+  console.log('test');
+}
+*/
+
+      /*
+do{
+   실행문;
+}while(조건식);
+*/
+
+      for (let i = 3; i <= 1; i++) {
+        console.log(i);
+      }
+
+      do {
+        console.log('고객님 주문하시겠습니까?(y/n)');
+        let input = prompt('입력');
+      } while (input == 'y');
+    </script>
+  </body>
+</html>

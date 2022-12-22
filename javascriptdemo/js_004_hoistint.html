@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_004_hoistint.html</title>
+  </head>
+  <body>
+    <script>
+      var foo = 10;
+      let bar = 20;
+      const tap = 50; //상수 : 변수를 선언할 때 한번만 값을 할당 할 수 있다.
+
+      foo = 30;
+      bar = 40;
+
+      //Uncaught TypeError: Assignment to constant variable.
+      // const 변수는 값을 변경할 수 없다.
+      //tap = 60;
+
+      console.log(`foo=${foo}`);
+      console.log(`bar=${bar}`);
+      console.log(`tab=${tap}`);
+
+      let subject;
+      //subject=undefined
+      console.log(`subject=${subject}`);
+
+      let run = null;
+      //run=null
+      console.log(`run=${run}`);
+    </script>
+  </body>
+</html>

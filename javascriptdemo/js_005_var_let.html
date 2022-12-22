@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_005_var_let.html</title>
+  </head>
+  <body>
+    <script>
+      /*
+    변수의 scope(스코프) (var와 let)
+    1. var는 변수가 사용되는 범위가 전역, 함수 내부 로컬 2가지만 사용 가능하다.
+    2. let 는 변수가 사용되는 범위가 전역, 함수 내부 로컬, 코드블록, 표현식 로컬 등의 정의에 사용할 수 있다.
+    */
+
+      for (var i = 1; i < 3; i++) {
+        console.log(`i=${i}`);
+      }
+
+      console.log(`i=${i}`);
+      console.log("=====================================");
+
+      for (let j = 1; j < 3; j++) {
+        console.log(`j=${j}`);
+      }
+
+      //Uncaught ReferenceError: j is not defined
+      console.log(`j=${j}`);
+    </script>
+  </body>
+</html>

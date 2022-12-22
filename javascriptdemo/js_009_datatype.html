@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_009_datatype.html</title>
+  </head>
+  <body>
+    <script>
+      /*
+      datatype
+      primitive datatype : 기본 데이터 타입
+      reference datatype : 참조 데이터 타입
+      */
+
+      let num = 3;
+      console.log(typeof num); //number
+
+      let nobject = new Number(3);
+      console.log(typeof nobject); //object
+      console.log(nobject instanceof Number); //true
+
+      num = "3";
+      console.log(typeof num); //string
+      console.log(num + 2); // '3' + 2 = 32
+
+      let sobject = new String("2");
+      console.log(typeof sobject); //object
+
+      let avg = 4.5;
+      console.log(`avg=${avg}, ${typeof avg}`); //avg=4.5, number
+
+      let check = true;
+      console.log(`check=${check}, ${typeof check}`); //check=true, boolean
+
+      let name = null;
+      console.log(`name=${name}, ${typeof name}`); //name=null, object
+
+      let na = undefined;
+      console.log(`na=${na}, ${typeof na}`); //na=undefined, undefined
+
+      let loc = new String("node");
+      console.log(`loc=${loc}, ${typeof loc}`); //loc=node, object
+      console.log(`loc=${loc instanceof String}`); //loc=true
+
+      let jumsu = new Number(10);
+      console.log(`jumsu=${jumsu}, ${typeof jumsu}`); //jumsu=10, object
+      console.log(`jumsu=${jumsu instanceof Number}`); //jumsu=true
+
+      let fn = function () {
+        console.log("function");
+      }; //익명함수
+
+      console.log(`fn=${fn}, ${typeof fn}`);
+      //fn=function () {console.log("function");}, function
+      fn(); //function
+
+      let arr = [1, 2, 3];
+      console.log(`arr=${arr}, ${typeof arr}`); //arr=1,2,3, object
+      console.log(`arr=${arr instanceof Array}`); //arr=true
+
+      let customer = { name: "홍길동", age: 30 };
+      console.log(`customer=${customer}, ${typeof customer}`); //customer=[object Object], object
+      console.log(`customer=${customer instanceof Object}`); //customer=true
+      console.log(`${customer.name}, ${customer.age}`); //홍길동, 30
+    </script>
+  </body>
+</html>
