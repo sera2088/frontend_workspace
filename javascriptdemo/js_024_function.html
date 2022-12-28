@@ -22,14 +22,14 @@
       let upperCnt = (data) => {
         let cnt = 0;
         for (let element of data) {
-          if (element >= "A" && element <= "Z") {
+          if (element >= 'A' && element <= 'Z') {
             cnt++;
           }
         }
         return cnt;
       };
 
-      let arr = ["j", "a", "v", "A"];
+      let arr = ['j', 'a', 'v', 'A'];
       console.log(`요소의 길이 : ${length(arr)}`);
       console.log(`2인덱스의 요소값 가져오기 : ${charAt(arr, 2)}`);
       console.log(`대문자 개수: ${upperCnt(arr)}`);
