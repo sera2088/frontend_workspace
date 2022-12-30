@@ -1,0 +1,153 @@
+/* 메인 CSS - main.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* body *{
+    outline: 2px dashed blue;
+} */
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li {
+  float: left;
+}
+
+.sign {
+  float: left;
+}
+/* 공통 CSS */
+.wrap {
+  width: 1060px;
+  margin: auto;
+  background-color: black;
+}
+
+/*상단 이미지*/
+.headertop {
+  height: 512px;
+  background-color: aqua;
+}
+
+.logobox {
+  top: 320px;
+  left: 100px;
+  width: 250px;
+  height: 150px;
+  background-color: skyblue;
+  position: relative;
+}
+
+/*네비게이션*/
+.headerbottom {
+  height: 100px;
+  background-color: blueviolet;
+  display: block;
+}
+
+.navwrap ul {
+  position: relative;
+  top: 15px;
+  height: 70px;
+  text-align: center;
+  /* background-color: pink; */
+  margin-left: 15px;
+}
+
+.navwrap ul li a {
+  width: 150px;
+  height: 70px;
+  list-style: none;
+  float: left;
+  position: relative;
+  background-color: aqua;
+}
+
+/*바디*/
+.bodywrap {
+  height: 4500px;
+  background-color: aquamarine;
+}
+
+/*검색창*/
+.search-box {
+  position: relative;
+  top: 150px;
+  width: 700px;
+  height: 50px;
+  background-color: black;
+  margin: auto;
+}
+
+/*메인이미지*/
+.mainImg {
+  position: relative;
+  height: 600px;
+  top: 300px;
+  background-color: aliceblue;
+}
+
+/*헤드카피*/
+.headcopy {
+  position: relative;
+  top: 500px;
+  height: 100px;
+  /* background-color: black; */
+  margin: auto;
+}
+.headcopy p {
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/*이미지캡*/
+.imgcap {
+  position: relative;
+  background-color: white;
+  top: 600px;
+  margin: 100px auto;
+  width: 700px;
+  height: 550px;
+}
+
+/*바닥이미지*/
+
+.bottomimg {
+  position: relative;
+  top: 700px;
+  width: 800px;
+  margin: auto;
+}
+
+.imgbox {
+  width: 200px;
+  height: 200px;
+  float: left;
+  background-color: red;
+}
+
+/*푸터*/
+.footwrap {
+  height: 240px;
+  background-color: blue;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_049_sub.html</title>
+  </head>
+  <body>
+    <div id="pt">
+      <img src="images/popup.jpg" usemap="#pop" />
+
+      <map name="pop" id="pop">
+        <!-- 이미지맵 좌표 링크 설정 : coords='x start, y start, x end, y end' -->
+        <area
+          shape="rect"
+          coords="255,332,290,345"
+          href="#"
+          alt="창 닫기"
+          onclick="window.close()"
+        />
+      </map>
+    </div>
+  </body>
+</html>

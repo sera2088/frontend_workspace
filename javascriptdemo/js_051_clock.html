@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_051_clock.html</title>
+    <script defer src="js_051_clock.js"></script>
+    <style>
+      .clock_box {
+        display: inline-block;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: #000000;
+        color: white;
+        text-align: center;
+      }
+
+      .large_text {
+        font-size: 75px;
+      }
+
+      .small_text {
+        font-size: 20px;
+      }
+
+      @keyframes blick {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      /* animation-name (en-US), animation-duration, animation-timing-function (en-US), 
+      animation-delay, animation-iteration-count (en-US), animation-direction, 
+      animation-fill-mode, animation-play-state (en-US) */
+
+      .colon {
+        font-size: 55px;
+        vertical-align: text-bottom;
+        animation: blink 1s step-start 0s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>디지털 시계</h3>
+    <div class="clock_box">
+      <div class="time_box">
+        <span id="hours" class="large_text"></span>
+        <span class="colon">:</span>
+        <span id="minute" class="large_text"></span>
+        <span id="seconds" class="small_text"></span>
+      </div>
+
+      <div class="date_box">
+        <span id="year"></span>
+        <span>.</span>
+        <span id="month"></span>
+        <span>.</span>
+        <span id="date"></span>
+        <dpan id="day"></dpan>
+      </div>
+    </div>
+  </body>
+</html>
