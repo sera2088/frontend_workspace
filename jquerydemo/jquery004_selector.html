@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery004_selector.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //nth-child(n), nth-of-type(n) : n은 1부터 시작
+
+        //div 요소에서 모든 자식요소 중 2번째의 요소를 p요소이면 스타일 적용
+        $('p:nth-child(2)').css({
+          color: 'red',
+        });
+
+        //div 요소에서 2번째에 해당하는 p요소에 스타일 적용
+        $('p:nth-of-type(2)').css({
+          color: 'blue',
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <p>part01</p>
+      <span>line</span>
+      <p>part02</p>
+      <p>part03</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery022_pageNumber.html</title>
+    <style>
+      ol.paging {
+        list-style-type: none;
+      }
+
+      ol li {
+        float: left;
+        margin-right: 8px; /* li 각각 8px씩 마진 */
+      }
+
+      ol.paging li a {
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 3px 7px;
+        color: #000000;
+      }
+
+      ol.paging li a.cbox,
+      ol.paging li a:hover {
+        background-color: #00b3dc;
+        color: white;
+        font-weight: bolder;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('ol.paging li a').click(function (e) {
+          $('ol.paging li a').removeClass('cbox');
+          $(this).addClass('cbox');
+
+          return false;
+          //e.preventDefault();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <ol class="paging">
+      <li><a href="">이전으로</a></li>
+      <li><a href="" class="cbox">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li><a href="">5</a></li>
+      <li><a href="">다음으로</a></li>
+    </ol>
+  </body>
+</html>

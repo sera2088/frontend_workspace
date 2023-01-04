@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery009_array.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let arr = [10, 20, 30, 40, 50];
+        for (let idx in arr) console.log(arr[idx]);
+
+        arr.map((element, index) => {
+          console.log(element);
+        });
+
+        arr.forEach((element, index) => {
+          console.log(element);
+        });
+
+        $(arr).each((idx, element) => {
+          console.log(element);
+        });
+
+        let liList = document.querySelectorAll('li');
+        liList.forEach((element) => {
+          console.log(element);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>content1</li>
+      <li>contnet2</li>
+      <li>content3</li>
+    </ul>
+  </body>
+</html>

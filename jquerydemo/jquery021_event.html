@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery021_event.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('input').on('focus mouseover', function () {
+          $('div').css({ 'background-color': 'yellow' });
+        });
+
+        //눌렀다 땠을 때
+        $('#fid').keyup(function () {
+          $('p').text($(this).val());
+        });
+
+        //눌렀을 때
+        $('#fname').keydown(function () {
+          $('p').text($(this).val());
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div><input type="text" name="id" id="fid" /></div>
+
+    <button>keyboard</button>
+
+    <input type="text" name="id" id="fname" />
+    <p></p>
+  </body>
+</html>

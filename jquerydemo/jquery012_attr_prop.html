@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery012_attr_prop.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //속성:attribute(HTML), property(Javascript)
+
+        //http://127.0.0.1:5500/frontend_workspace/jquerydemo/jquery001_cdn.html
+        console.log(document.querySelector('a').href);
+
+        //jquery001_cdn.html
+        console.log(document.querySelector('a').getAttribute('href'));
+
+        //jquery001_cdn.html,http://127.0.0.1:5500/frontend_workspace/jquerydemo/jquery001_cdn.html<br/>
+        console.log($('a').attr('href') + ',' + $('a').prop('href') + '<br/>');
+
+        //undefined,false
+        console.log(
+          $('input').attr('checked') + ',' + $('input').prop('checked')
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <button id="btn">commit</button>
+    <a href="jquery001_cdn.html">첫 페이지</a>
+    <input type="checkbox" />
+    <div>test</div>
+  </body>
+</html>

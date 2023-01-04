@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery014_before_after.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //$('기준요소').before('추가요소');
+        $('#myList').before('<li id="bNode">before</li>');
+
+        //$('기준요소').after('추가요소');
+        $('#myList').after('<li id="aNode">after</li>');
+
+        //$('추가요소').insertBefore('기준요소');
+        $('<li id="cNode">insertBefore</li>').insertBefore('#myList');
+
+        //$('추가요소').insertAfter('기준요소');
+        $('<li id="dNode">insertAfter</li>').insertAfter('#myList');
+
+        console.log($('ul').children().length);
+      });
+    </script>
+  </head>
+  <body>
+    <button>commit</button>
+    <ul>
+      <li id="myList">content</li>
+    </ul>
+  </body>
+</html>

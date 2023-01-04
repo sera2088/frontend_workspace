@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery023_event.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('h1 a').on('mouseover focus', function () {
+          $(this).css({ 'background-color': 'red' });
+        });
+
+        $('h1 a').on('mouseout blur', function () {
+          $(this).css({ 'background-color': 'white' });
+        });
+
+        /////////////////////////////////////////////////////////
+        //동적으로 생성된 요소에 이벤트 등록
+        //$(document).on('mouseover focus', 'h2 a', function(){
+        //  $(this).css({color:'orange'});
+        //});
+
+        //정적인 요소 : h2 , 동적인 요소 : a
+        $('h2').on('mouseover focus', 'a', function () {
+          $(this).css({ color: 'orange' });
+        });
+
+        $('h2').on('mouseout blur', 'a', function () {
+          $(this).css({ color: 'black' });
+        });
+
+        $('h2').append('<a href="#">new element</a>');
+
+        $('button#clear').click(function () {
+          $('h1 a').off('mouseover focus mouseout blur');
+          $('h2').off('mouseover focus mouseout blur', 'a');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1><a href="#">버튼</a></h1>
+    <h2></h2>
+
+    <h3><a href="#">하위요소1</a><a href="#">하위요소2</a></h3>
+
+    <button id="btn">one</button>
+    <span>0</span>
+
+    <button id="clear">이벤트 제거</button>
+  </body>
+</html>

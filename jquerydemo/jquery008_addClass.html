@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery008_addClass.html</title>
+    <style>
+      .wrap {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 1px solid black;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('button:nth-of-type(1)').click(function () {
+          //document.querySelector('div').classList.add('wrap');
+          $('div').addClass('wrap');
+        });
+
+        $('button:nth-of-type(2)').click(function () {
+          //document.querySelector('div').classList.remove('wrap');
+
+          $('div').removeClass('wrap');
+        });
+
+        $('button:nth-of-type(3)').click(() => {
+          $('div').toggleClass('wrap');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button>commit</button>
+    <button>reset</button>
+    <button>toggle</button>
+    <div>&nbsp</div>
+  </body>
+</html>

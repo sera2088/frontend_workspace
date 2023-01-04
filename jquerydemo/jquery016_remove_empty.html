@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery016_remove_empty.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //선택한 요소를 삭제한다.
+        //$('#line_2').remove();
+
+        //선택한 요소의 하위요소를 삭제한다.
+        $('ul').empty();
+      });
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li id="line_1">content1</li>
+      <li id="line_2">content2</li>
+    </ul>
+  </body>
+</html>

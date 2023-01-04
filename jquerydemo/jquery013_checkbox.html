@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery013_checkbox.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#check_all').click(function () {
+          $('.chk').prop('checked', $(this).prop('checked'));
+        });
+
+        $('button').click(() => {
+          //   $('.chk').each((index, element) => {
+          //     if ($(element).prop('checked'))
+          //       $(element).parent().parent().remove();
+          //   });
+          // });
+
+          //$('.chk:checked').parent().parent().remove();
+
+          $('.chk:checked').parents('tr').remove(); //쭉 타고 올라가서 부모가 'tr'일 때 삭제
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button>삭제</button>
+    <div class="wrap">
+      <table>
+        <tr>
+          <th>
+            <input type="checkbox" class="check_all" id="check_all" />
+            <label for="check_all">전체선택</label>
+          </th>
+          <th>제목</th>
+          <th>작성자</th>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" class="chk" /></td>
+          <td>title1</td>
+          <td>writer1</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="chk" /></td>
+          <td>title2</td>
+          <td>writer2</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="chk" /></td>
+          <td>title3</td>
+          <td>writer3</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="chk" /></td>
+          <td>title4</td>
+          <td>writer4</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="chk" /></td>
+          <td>title5</td>
+          <td>writer5</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

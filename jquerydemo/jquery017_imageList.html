@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery017_imageList.html</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        border-width: 0px;
+      }
+
+      div {
+        width: 300px;
+        margin: 10px auto;
+      }
+
+      ul {
+        list-style-type: none;
+        width: 300px;
+      }
+
+      li {
+        width: 90px;
+        height: 100px;
+        float: left;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let imgList = [
+          'pic_t1.jpg',
+          'pic_t2.jpg',
+          'pic_t3.jpg',
+          'pic_t4.jpg',
+          'pic_t5.jpg',
+          'pic_t6.jpg',
+          'pic_t7.jpg',
+          'pic_t8.jpg',
+        ];
+
+        imgList.map((element, index) => {
+          $('ul').append(
+            `<li><img src="images/${element}"/><p><input type='checkbox'/><span>이미지${
+              index + 1
+            }</span></p></li>`
+          );
+        });
+
+        //전체선택
+        $('.check_all').click(function () {
+          $('p input').prop('checked', this.checked);
+        });
+
+        //삭제
+        $('button').click(function () {
+          $('p input:checked').parents('li').remove();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <button>삭제</button>
+      <input type="checkbox" class="check_all" />전체선택
+      <ul></ul>
+    </div>
+  </body>
+</html>

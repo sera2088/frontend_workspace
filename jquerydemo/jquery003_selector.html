@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery003_selector.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //button의 부모요소
+        $('#btn').parent().css({
+          width: '200px',
+          height: '200px',
+          border: '1px solid black',
+        });
+
+        //ul요소의 모든 자식요소
+        $('ul').children().css({
+          color: 'red',
+        });
+
+        //ul요소의 이전 이웃요소
+        $('ul').prev().css({
+          'background-color': 'yellow',
+        });
+
+        //ul요소의 다음 이웃요소
+        $('ul').next().css({
+          'background-color': 'aqua',
+        });
+
+        //index 0 start
+        $('li:even').css({
+          border: '1px solid black',
+        });
+
+        //index 1 start
+        // $('li:nth-child(even)').css({
+        //   'background-color': 'green',
+        // });
+
+        $('li:nth-of-type(even)').css({
+          'background-color': 'blue',
+        });
+
+        //nth_child 와 nth-of-type :
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <button id="btn">click</button>
+      <ul>
+        <li>list1</li>
+        <p>test</p>
+        <li>list2</li>
+        <li>list3</li>
+      </ul>
+      <p>line</p>
+    </div>
+  </body>
+</html>

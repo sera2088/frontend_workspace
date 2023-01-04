@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery024_boxmodel.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+      }
+      #wrap {
+        width: 300px;
+        height: 200px;
+        background-color: #ccc;
+        position: relative;
+        top: 50px;
+        left: 400px;
+        margin: 0;
+      }
+
+      #box {
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        position: relative;
+        top: -50px;
+        left: 100px;
+        padding: 5px;
+        border: 10px solid red;
+        /* margin: 10px; */
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //position() : 선택한 요소의 포지션 위치값 리턴(기준이 자신)
+        let top1 = $('#box').position().top;
+        let left1 = $('#box').position().left;
+        $('#t1').text(`top:${top1}, left:${left1}`);
+
+        //offset() : 선택한 요소의 포지션 위치값을 리턴(기준이 body)
+        let top2 = $('#box').offset().top;
+        let left2 = $('#box').offset().left;
+        $('#t2').text(`top:${top2}, left:${left2}`);
+
+        //width() : margin, border, padding을 제외한 가로크기 리턴
+        let w1 = $('#box').Width();
+        $('#t3').text(`너비:${w1}`);
+
+        //innerwidth() : padding()을 포함한 가로크기 리턴
+        let w2 = $('#box').innerWidth();
+        $('#t4').text(`너비:${w2}`);
+
+        //outerwidth() : border, padding을 포함한 가로크기 리턴
+        let w3 = $('#box').outerWidth();
+        $('#t5').text(`너비:${w3}`);
+
+        //outerwidth(true) : margin, border, padding을 포함한 가로크기 리턴
+        let w4 = $('#box').outerWidth(true);
+        $('#t6').text(`너비:${w4}`);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <p id="box">박스1</p>
+    </div>
+
+    <p id="t1"></p>
+    <p id="t2"></p>
+    <p id="t3"></p>
+    <p id="t4"></p>
+    <p id="t5"></p>
+    <p id="t6"></p>
+  </body>
+</html>
