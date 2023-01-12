@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyHompage</title>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="headwrap">
+          <div class="top_head">
+            <div class="headlogo">
+              <a href="javascript:void(0);">
+                <img src="image/img1.jpg" alt="로고" />
+              </a>
+            </div>
+            <!-- <div class="top_search_btn">
+              <a href="#">
+                <img src="" alt="돋보기" />
+              </a>
+            </div> -->
+          </div>
+
+          <div class="gnb_menu">
+            <ul class="gnb">
+              <li class="gnb1">
+                <a
+                  href="javascript:void(0);"
+                  onmouseover="showGnb(gnb1)"
+                  onmouseout="exitGnb(gnb1)"
+                  >브랜드 소개
+                </a>
+              </li>
+              <li class="gnb2">
+                <a
+                  href="javascript:void(0);"
+                  onmouseover="showGnb(gnb2)"
+                  onmouseout="exitGnb(gnb2)"
+                  >베스트 메뉴
+                </a>
+              </li>
+              <li class="gnb3">
+                <a
+                  href="javascript:void(0);"
+                  onmouseover="showGnb(gnb3)"
+                  onmouseout="exitGnb(gnb3)"
+                  >포토 게시판
+                </a>
+              </li>
+              <li class="gnb4">
+                <a
+                  href="javascript:void(0);"
+                  onmouseover="showGnb(gnb4)"
+                  onmouseout="exitGnb(gnb4)"
+                  >공지사항</a
+                >
+              </li>
+              <li class="gnb5">
+                <a
+                  href="javascript:void(0);"
+                  onmouseover="showGnb(gnb5)"
+                  onmouseout="exitGnb(gnb5)"
+                  >전체 메뉴 보기
+                </a>
+              </li>
+            </ul>
+            <!-- none 풀기 -->
+            <div class="gnb_show">
+              <ul class="gnb_bottom_one">
+                <li class="gnb1"><a href="#">상세 소개</a></li>
+                <li class="gnb2"><a href="#">한식</a></li>
+                <li class="gnb3"><a href="#">포토 게시판</a></li>
+                <li class="gnb4"><a href="#">공지사항</a></li>
+                <li class="gnb5"><a href="#">전체 메뉴 보기</a></li>
+              </ul>
+              <ul class="gnb_bottom_two">
+                <li class="gnb1"><a href="#">CI 소개</a></li>
+                <li class="gnb2"><a href="#">중식</a></li>
+                <li class="gnb3"><a href="#">포토 게시판</a></li>
+                <li class="gnb4"><a href="#">공지사항</a></li>
+                <li class="gnb5"><a href="#">전체 메뉴 보기</a></li>
+              </ul>
+              <ul class="gnb_bottom_three">
+                <li class="gnb1"><a href="#">연혁</a></li>
+                <li class="gnb2"><a href="#">일식</a></li>
+                <li class="gnb3"><a href="#">포토 게시판</a></li>
+                <li class="gnb4"><a href="#">공지사항</a></li>
+                <li class="gnb5"><a href="#">전체 메뉴 보기</a></li>
+              </ul>
+              <ul class="gnb_bottom_four">
+                <li class="gnb1"><a href="#">연혁</a></li>
+                <li class="gnb2"><a href="#">일식</a></li>
+                <li class="gnb3"><a href="#">포토 게시판</a></li>
+                <li class="gnb4"><a href="#">공지사항</a></li>
+                <li class="gnb5"><a href="#">전체 메뉴 보기</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="headcopy">
+            <p>오늘은 어떤 요리?</p>
+            <p class="login"><a href="#">로그인하기</a></p>
+          </div>
+        </div>
+        <div class="search">
+          <input
+            class="search_bar"
+            type="text"
+            placeholder="레시피가 궁금한 메뉴를 검색하세요! + enter"
+          />
+        </div>
+      </header>
+      <div class="bodywrap">
+        <div class="bodycopy">
+          <p>Best Menu</p>
+        </div>
+        <div class="bestmenu">
+          <div class="best_img1">
+            <a href="javascript:void(0);">
+              <img src="image/menu1.jpg" alt="베스트메뉴1" />
+            </a>
+          </div>
+          <div class="best_img2">
+            <a href="javascript:void(0);">
+              <img src="image/menu2.jpg" alt="베스트메뉴1" />
+            </a>
+          </div>
+          <div class="best_img3">
+            <a href="javascript:void(0);">
+              <img src="image/menu3.jpg" alt="베스트메뉴1" />
+            </a>
+          </div>
+        </div>
+        <!-- br : bestrecipe -->
+        <div class="bestrecipe">
+          <div class="br_copywrap">
+            <h1>이 레시피 어때요?</h1>
+            <p>건강하고 간단한 아침을</p>
+            <p>빠르게 만드는 레시피</p>
+          </div>
+          <section class="br_imgwrap">
+            <ul class="slide">
+              <li>
+                <a href="javascript:void(0);"
+                  ><img src="image/slice1.png" alt="슬라이드1"
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0);"
+                  ><img src="image/slice2.jpg" alt="슬라이드2"
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0);"
+                  ><img src="image/slice3.jpg" alt="슬라이드3"
+                /></a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="event">
+          <div class="eventcopy">
+            <p>🍔랜덤 추천 레시피🍔</p>
+          </div>
+          <div class="event_imgwrap">
+            <div class="ev_img1">
+              <div class="ev_text1"></div>
+              <br />
+              <h1>한우 소불고기</h1>
+              <div class="btn1" onclick="showPopup()">
+                <a href="javascript:void(0);">SHOW!</a>
+              </div>
+            </div>
+            <div class="ev_img2">
+              <div class="ev_text2"></div>
+              <br />
+              <h1>비빔밥</h1>
+              <div class="btn2" onclick="showPopup()">
+                <a href="javascript:void(0);">SHOW!</a>
+              </div>
+            </div>
+            <div class="ev_img3" onclick="showPopup()">
+              <div class="ev_text3"></div>
+              <br />
+              <h1>닭도리탕</h1>
+              <div class="btn3"><a href="javascript:void(0);">SHOW!</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="notice_wrap">
+          <div class="n_btn">
+            <button class="n_btn1"><a href="#">공지사항</a></button>
+            <button class="n_btn2"><a href="#">월간식단표</a></button>
+            <button class="n_btn3"><a href="#">메모장</a></button>
+          </div>
+          <div class="notice">
+            <h1>Notice</h1>
+            <div class="notice1">
+              <table id="nt_table">
+                <thead class="thead">
+                  <tr>
+                    <th>내용</th>
+                    <th>날짜</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="nt_point">
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                  <tr>
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                  <tr class="nt_point">
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                  <tr>
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                  <tr class="nt_point">
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                  <tr>
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                  <tr class="nt_point">
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                  <tr>
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                  <tr class="nt_point">
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                  <tr>
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                  <tr class="nt_point">
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                  <tr>
+                    <td class="nt_left">Data Col 1a</td>
+                    <td>Data Col 1a</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="notice2">
+              <div class="nt2_tapbar">
+                <div class="nt2_tap"></div>
+              </div>
+              <!-- <p>탭기능 삽입</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_bg"></div>
+    <div class="modal_wrap">
+      <p>레시피 수집중...</p>
+      <div>
+        <a href="javascript:void(0);" onclick="modalClose()">close X</a>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <div class="footer_wrap">
+      <div class="foot_pbox">
+        <p>고객서비스센터(수신자요금부담) : 111-1212-12123</p>
+        <p>© GoRecipe 고레시피 COPY.SERA</p>
+        <p>TEL : 1515-1515</p>
+        <p>FAX:151-1515-151</p>
+        <p>MAIL:sera2088@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+</html>
